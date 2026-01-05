@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" href="./CSS/media.css" />
+  <title>WsCube Landing Page</title>
+</head>
+
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Register</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="register">
+            <h3 class="ps-1 pt-1">Book Your Free Class Now!</h3>
+            <p class="m-0 ps-1 pt-0">
+              2 days of free demo classes without<br />
+              paying in advance!
+            </p>
+            <form>
+              <div class="mb-3">
+                <label for="examplename" class="form-label">Name</label>
+                <input type="text" class="form-control" id="examplename" aria-describedby="examplename"
+                  placeholder="Enter Your name" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter Your Email" />
+              </div>
+
+              <div class="container mb-3 p-0">
+                <label class="form-label">Phone Number</label>
+
+                <div class="input-group">
+                  <select class="form-select" aria-label="Default select example">
+                    <option value="+92">+92</option>
+                    <option value="+91">+91</option>
+                    <option value="+93">+93</option>
+                  </select>
+                  <input type="tel" class="form-control" placeholder="Enter phone number" />
+                </div>
+              </div>
+
+              <button type="submit" class="btn submit-btn w-100 border mb-2">
+                Register Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="container-fluid py-2 position-sticky top-0">
+    <div class="container">
+      <div class="row align-items-center">
+        <figure class="col-lg-6 col-12 text-lg-start text-center mb-0 pb-0">
+          <img src="./images/logo_black 1.svg" alt="logo" />
+        </figure>
+
+        <div class="col-lg-6">
+          <div class="btn-outer d-flex gap-3 justify-content-end">
+            <button class="btn whatsapp-btn">
+              <i class="fa-brands fa-whatsapp"></i>
+              Chat with us
+            </button>
+            <button class="btn call-btn">
+              <i class="fa-solid fa-phone"></i>
+              Chat with us
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row baner-content justify-content-between bg-light">
+        <div class="col-lg-6">
+          <h1>
+            Career Opportunities<br />
+            in <span>Digital Marketing</span>
+          </h1>
+          <p class="m-0">
+            Digital marketing course so good,you only pay-after-placement
+          </p>
+          <ul class="list-unstyled mt-0">
+            <li class="pb-2">
+              <i class="fa-solid fa-circle-check me-1"></i>Specialization:
+              Performance Marketing
+            </li>
+            <li class="pb-2">
+              <i class="fa-solid fa-circle-check me-1"></i>Min salary of Rs
+              4.5 LPA
+            </li>
+            <li class="pb-2">
+              <i class="fa-solid fa-circle-check me-1"></i>50 seats only
+            </li>
+          </ul>
+          <div class="banner-btn-outer d-flex gap-4">
+            <button class="banner-btn rounded">Book 2 Days Demo</button>
+            <button class="banner-btn rounded" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <i class="fa-solid fa-download mx-2"></i>Download Curriculum
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-3 register border rounded">
+          <h3 class="ps-1 pt-1">Book Your Free Class Now!</h3>
+          <p class="m-0 ps-1 pt-0">
+            2 days of free demo classes without<br />
+            paying in advance!
+          </p>
+          <form>
+            <div class="mb-3">
+              <label for="examplename" class="form-label">Name</label>
+              <input type="text" class="form-control" id="examplename" aria-describedby="examplename"
+                placeholder="Enter Your name" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter Your Email" />
+            </div>
+
+            <div class="container mb-3 p-0">
+              <label class="form-label">Phone Number</label>
+
+              <div class="input-group">
+                <select class="form-select" aria-label="Default select example">
+                  <option value="+92">+92</option>
+                  <option value="+91">+91</option>
+                  <option value="+93">+93</option>
+                </select>
+                <input type="tel" class="form-control" placeholder="Enter phone number" />
+              </div>
+            </div>
+
+            <button type="submit" class="btn submit-btn w-100 border mb-2">
+              Register Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="container shadow-lg rounded mt-5 feature-about">
+      <div class="row row-cols-lg-5 row-cols-2 g-3">
+        <div class="col">
+          <h3>1000+</h3>
+          <p>Trained Student</p>
+        </div>
+        <div class="col">
+          <h3><i class="fa-solid fa-dollar-sign"></i>4.5 LPA</h3>
+          <p>Trained Student</p>
+        </div>
+        <div class="col">
+          <h3>320+</h3>
+          <p>Recruiters partner</p>
+        </div>
+        <div class="col">
+          <h3>10:00 am</h3>
+          <p>Program Timings</p>
+        </div>
+        <div class="col">
+          <h3>11th May</h3>
+          <p>Next Batch Started</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid my-3 p-5">
+    <div class="container">
+      <div class="row highlights">
+        <div class="col">
+          <h3>Key Highlights of the Course</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare
+            pharetra leo vestibulum at orci.
+          </p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-3 g-3 highlight-item">
+        <div class="col">
+          <div class="row border rounded py-2">
+            <figure class="col-3">
+              <img class="img-fluid" src="./images/Group 4488.png" alt="Assigmnet" />
+            </figure>
+            <div class="col-9">
+              <h3>Assignments & Modules tests</h3>
+              <p>Test your knowledge</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="row border rounded py-2">
+            <figure class="col-3">
+              <img class="img-fluid" src="./images/Frame 353.png" alt="Assigmnet" />
+            </figure>
+            <div class="col-9">
+              <h3>Industry-recognized Certification</h3>
+              <p>Stand out to your professional</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="row border rounded py-2">
+            <figure class="col-3">
+              <img class="img-fluid" src="./images/Frame 354.png" alt="Assigmnet" />
+            </figure>
+            <div class="col-9">
+              <h3>Live classes & recorded lectures</h3>
+              <p>Best of both worlds of learning</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="row border rounded py-2">
+            <figure class="col-3">
+              <img class="img-fluid" src="./images/Frame 352.png" alt="Assigmnet" />
+            </figure>
+            <div class="col-9">
+              <h3>Downloadable Content</h3>
+              <p>With lifetime access</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="row border rounded py-2">
+            <figure class="col-3">
+              <img class="img-fluid" src="./images/Frame 353 (1).png" alt="Assigmnet" />
+            </figure>
+            <div class="col-9">
+              <h3>With lifetime access</h3>
+              <p>6 Industry level projects</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="row border rounded py-2">
+            <figure class="col-3">
+              <img class="img-fluid" src="./images/Frame 354 (1).png" alt="Assigmnet" />
+            </figure>
+            <div class="col-9">
+              <h3>4 Live Doubt clearing Session</h3>
+              <p>Gain a clear understanding</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center mt-4">
+          <button class="btn btn-hightlight rounded">Book Free Class</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid my-3 p-5">
+    <div class="container">
+      <div class="row text-center carrer">
+        <div class="col">
+          <h3>Top carrer Option in <span>Digital marketing</span></h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare
+            pharetra.
+          </p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 carrer-item">
+        <div class="col">
+          <div class="d-flex flex-column rounded shadow-lg p-3 h-100">
+            <img src="./images/Group 4489 (1).png" alt="" class="mb-3 w-25" />
+            <h4>Content Marketer</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut
+              ornare pharetra leo vestibulum at orci.
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="d-flex flex-column rounded shadow-lg p-3 h-100">
+            <img src="./images/Search.png" alt="" class="mb-3 w-25" />
+            <h4>SEO Specialist</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut
+              ornare pharetra leo vestibulum at orci.
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="d-flex flex-column rounded shadow-lg p-3 h-100">
+            <img src="./images/3 User.png" alt="" class="mb-3 w-25" />
+            <h4>Social Media Manager</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut
+              ornare pharetra leo vestibulum at orci.
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="d-flex flex-column rounded shadow-lg p-3 h-100">
+            <img src="./images/Activity.png" alt="" class="mb-3 w-25" />
+            <h4>Marketing Analyst</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut
+              ornare pharetra leo vestibulum at orci.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid my-3 p-5 get-started-section">
+    <div class="container">
+      <div class="row justify-content-evenly">
+        <div class="col-12 col-lg-5">
+          <h3>Get Started</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare
+            pharetra leo vestibulum at orci.
+          </p>
+          <div class="row align-items-center gap-lg-3 rounded shadow-lg py-2 mb-3 bg-light">
+            <figure class="col-2">
+              <img class="img-fluid rounded" src=".//images/Ticket Star.png" alt="" />
+            </figure>
+            <div class="col-9">
+              <h5>Official and verifie</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut
+                ornare pharetra leo vestibulum at orci.
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center gap-lg-3 rounded shadow-lg py-3 mb-3 bg-light">
+            <figure class="col-2">
+              <img class="img-fluid rounded" src=".//images/Send.png" alt="" />
+            </figure>
+            <div class="col-9">
+              <h5>Easily shareable</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut
+                ornare pharetra leo vestibulum at orci.
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center gap-lg-3 rounded shadow-lg py-3 mb-3 bg-light">
+            <figure class="col-2">
+              <img class="img-fluid rounded" src=".//images/Activity.png" alt="" />
+            </figure>
+            <div class="col-9">
+              <h5>Career shifting</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut
+                ornare pharetra leo vestibulum at orci.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center justify-content-lg-start mt-4">
+            <button class="btn btn-hightlight rounded">
+              Book Free Class
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <figure class="certificate pt-4 m-4">
+            <img class="img-thumbnail" src="./images/8fea0fbac1d206d048f0a22e845cc0af6fa634fa.png" alt="" />
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="container-fluid p-5 Curriculum">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8 text-center">
+          <h3>
+            Curriculum of<br />
+            Our Digital Marketing
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare
+            pharetra.
+          </p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center  ">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#introduction"
+              type="button" role="tab">
+              Introduction
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#casestudies"
+              type="button" role="tab">
+              Case Studies
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#googleadsense"
+              type="button" role="tab">
+              Google AdSense
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#seomastery"
+              type="button" role="tab">
+              SEO Mastery
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#googleanalytics"
+              type="button" role="tab">
+              Google Analytics
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content shadow-lg rounded p-4 mb-6" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="introduction" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="row g-0">
+              <div class="col-12 col-lg-6 mb-0">
+                <ul class="list-unstyled m-0">
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>What is Digital Marketing?
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Requirement of Digital Marketing
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Digital Marketing for Working Professionals
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Job opportunities in Digital Marketing
+                  </li>
+
+                </ul>
+              </div>
+
+              <div class="col-12 col-lg-6 mb-0">
+                <ul class="list-unstyled m-0">
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>What is Digital Marketing?
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Requirement of Digital Marketing
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Digital Marketing for Working Professionals
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Job opportunities in Digital Marketing
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="casestudies" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="row g-0">
+              <div class="col-12 col-lg-6 mb-0">
+                <ul class="list-unstyled m-0">
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>What is Digital Marketing?
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Requirement of Digital Marketing
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Digital Marketing for Working Professionals
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Job opportunities in Digital Marketing
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-12 col-lg-6 mb-0">
+                <ul class="list-unstyled m-0">
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>What is Digital Marketing?
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Requirement of Digital Marketing
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Digital Marketing for Working Professionals
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Job opportunities in Digital Marketing
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="googleadsense" role="tabpanel" aria-labelledby="pills-contact-tab"
+            tabindex="0">
+            <div class="row g-0">
+              <div class="col-12 col-lg-6 mb-0">
+                <ul class="list-unstyled m-0">
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>What is Digital Marketing?
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Requirement of Digital Marketing
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Digital Marketing for Working Professionals
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Job opportunities in Digital Marketing
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-12 col-lg-6 mb-0">
+                <ul class="list-unstyled m-0">
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>What is Digital Marketing?
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Requirement of Digital Marketing
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Digital Marketing for Working Professionals
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Job opportunities in Digital Marketing
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="seomastery" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+
+            <div class="row g-0">
+              <div class="col-12 col-lg-6 mb-0">
+                <ul class="list-unstyled m-0">
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>What is Digital Marketing?
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Requirement of Digital Marketing
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Digital Marketing for Working Professionals
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Job opportunities in Digital Marketing
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-12 col-lg-6 mb-0">
+                <ul class="list-unstyled m-0">
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>What is Digital Marketing?
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Requirement of Digital Marketing
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Digital Marketing for Working Professionals
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Job opportunities in Digital Marketing
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="googleanalytics" role="tabpanel" aria-labelledby="pills-contact-tab"
+            tabindex="0">
+            <div class="row g-0">
+              <div class="col-12 col-lg-6 mb-0">
+                <ul class="list-unstyled m-0">
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>What is Digital Marketing?
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Requirement of Digital Marketing
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Digital Marketing for Working Professionals
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Job opportunities in Digital Marketing
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-12 col-lg-6 mb-0">
+                <ul class="list-unstyled m-0">
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>What is Digital Marketing?
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Requirement of Digital Marketing
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Digital Marketing for Working Professionals
+                  </li>
+                  <li class="mb-3 py-1 d-flex align-items-start">
+                    <i class="fa-solid fa-circle-check me-1"></i>Job opportunities in Digital Marketing
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center mt-4">
+        <button class="btn btn-hightlight rounded">Download Curriculum</button>
+      </div>
+    </div>
+  </section>
+  <div class="container-fluid my-3 p-5">
+    <div class="container">
+      <div class="row highlights mb-4">
+        <div class="col text-center">
+          <h3>Why Learn Digital Marketing</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare
+            pharetra leo vestibulum at orci.
+          </p>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-lg-3 g-4 highlight-item justify-content-center">
+
+        <div class="col">
+          <div class="h-100 border rounded p-4 shadow-lg ">
+            <img class="img-fluid mb-3" src="./images/Group 4488.png" alt="Assignment" />
+            <h3>Learn From Industry Experts</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor facilisis dignissim
+              felis.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="h-100 border rounded p-4 shadow-lg ">
+            <img class="img-fluid mb-3" src="./images/Group 4488.png" alt="Assignment" />
+            <h3>Learn From Industry Experts</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor facilisis dignissim
+              felis.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="h-100 border rounded p-4 shadow-lg ">
+            <img class="img-fluid mb-3" src="./images/Group 4488.png" alt="Assignment" />
+            <h3>Learn From Industry Experts</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor facilisis dignissim
+              felis.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="h-100 border rounded p-4 shadow-lg ">
+            <img class="img-fluid mb-3" src="./images/Group 4488.png" alt="Assignment" />
+            <h3>Learn From Industry Experts</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor facilisis dignissim
+              felis.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="h-100 border rounded p-4 shadow-lg">
+            <img class="img-fluid mb-3" src="./images/Group 4488.png" alt="Assignment" />
+            <h3>Learn From Industry Experts</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor facilisis dignissim
+              felis.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="h-100 border rounded p-4 shadow-lg ">
+            <img class="img-fluid mb-3" src="./images/Group 4488.png" alt="Assignment" />
+            <h3>Learn From Industry Experts</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor facilisis dignissim
+              felis.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col text-center mt-4">
+          <button class="btn btn-hightlight rounded">Book Free Class</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <section class="container-fluid my-4 p-2">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h3>What Our Students<br> Are Saying!</h3>
+          <p>Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare pharetra.</p>
+        </div>
+      </div>
+      <!-- Grid: spacing handled by g-4 -->
+      <div class="row row-cols-1 row-cols-lg-2 g-4">
+
+        <!-- Card -->
+        <div class="col">
+          <div class="card border shadow-sm p-4 h-100">
+
+            <!-- Header -->
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="./images/5886111bb81effd31d91e02efcff40805257d66a.png" alt="student"
+                class="rounded-circle img-fluid" width="48" height="48" />
+              <div>
+                <h6 class="mb-0 fw-semibold">Matt Cannon</h6>
+                <small class="text-muted">September 1, 2023</small>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <p class="mb-0 text-muted">
+              Lorem ipsum dolor sit amet consectetur. Arcu nisi diam eget id turpis
+              donec et morbi. Sit eu nisl non scelerisque vestibulum pulvinar.
+              Condimentum massa bibendum pretium tincidunt sed vel.
+            </p>
+
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="col bg">
+          <div class="card border shadow-sm p-4 h-100">
+
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="./images/5886111bb81effd31d91e02efcff40805257d66a.png" alt="student"
+                class="rounded-circle img-fluid" width="48" height="48" />
+              <div>
+                <h6 class="mb-0 fw-semibold">Matt Cannon</h6>
+                <small class="text-muted">September 1, 2023</small>
+              </div>
+            </div>
+
+            <p class="mb-0 text-muted">
+              Lorem ipsum dolor sit amet consectetur. Arcu nisi diam eget id turpis
+              donec et morbi. Sit eu nisl non scelerisque vestibulum pulvinar.
+              Condimentum massa bibendum pretium tincidunt sed vel.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <section class="container-fluid my-4">
+    <div class="container py-4 ad-banner">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3 class="text-light fw-bold">Are You Ready To Start Your Course?</h3>
+          <p class="text-light">Lorem ipsum dolor sit amet consectetur. Arcu nisi diam eget id turpis donec et morbi.
+          </p>
+          <button class="btn btn-light">Book free classes</button>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+  <section class="container-fluid my-4 section-faqs">
+    <div class="container">
+      <div class="row  pt-3">
+        <div class="col text-center">
+          <h3>Digital Marketing Course<br> FAQs</h3>
+          <p>Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare pharetra.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  What is website development?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam duis faucibus blandit.
+                  Non suscipit quis sed et mus nisl lacinia massa. Dignissim in adipiscing amet nisi eu semper augue.
+                  Amet dignissim blandit mi amet felis et malesuada. Sit.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  What is website development?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam duis faucibus blandit.
+                  Non suscipit quis sed et mus nisl lacinia massa. Dignissim in adipiscing amet nisi eu semper augue.
+                  Amet dignissim blandit mi amet felis et malesuada. Sit.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  What is website development?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam duis faucibus blandit.
+                  Non suscipit quis sed et mus nisl lacinia massa. Dignissim in adipiscing amet nisi eu semper augue.
+                  Amet dignissim blandit mi amet felis et malesuada. Sit.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center mt-4">
+          <button class="btn btn-hightlight rounded">Book Free Class</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <h3>Top Companies Hiring Digital Marketing in India</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <figure class="m-0">
+            <img src="./images/7a488d2dcb60bd8e097ed0c730f56e6061f6dc5b.png" alt="companies"
+              class="img-fluid img-thumbnail my-4" />
+          </figure>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <footer class="container-fluid py-4">
+  <div class="container">
+
+    <!-- Top Content -->
+    <div class="row justify-content-center text-center mb-4">
+      <div class="col-12">
+        <img
+          src="./images/logo_black 2.png"
+          alt="logo"
+          class="img-fluid mb-3"
+        />
+      </div>
+
+      <div class="col-12 col-md-8">
+        <p class="mb-0">
+          Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum
+          <br />
+          quam duis faucibus blandit. Non suscipit quis sed et mus nisl lacinia
+          massa
+        </p>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="my-4" />
+
+    <!-- Bottom Text -->
+    <div class="row">
+      <div class="col text-center">
+        <p class="mb-0 small">
+          All rights reserved by WsCube Tech
+        </p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+  integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
+</html>
